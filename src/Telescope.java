@@ -27,6 +27,31 @@ public class Telescope {
 			int rows = fin.nextInt(), cols = fin.nextInt();
 			//debug
 			System.out.println("rows = " + rows + " cols = " + cols);
+			//make the 1-d array
+			double [] originalValues = new double[rows*cols];
+			//read in the values from the file
+			for(int i = 0; i < rows*cols; i++) {
+				originalValues[i] = fin.nextDouble();
+			}
+			//make the 2-D array
+			double[][] grid = new double[rows][cols];
+			//loop over the rows
+			for(int r = 0; r < rows; r++) {
+				
+				//see if this row is even or odd
+				if(r%2 == 0) {
+					for(int c = 0; c < cols; c++) {
+						
+					}
+				}
+				else {
+					//odd row
+					for(int c = cols-1; c >= 0; c--) {
+						
+					}
+				}
+			}
+			
 		} catch (FileNotFoundException e) {
 			// TODO Auto-generated catch block
 			System.out.println("File not found.");
